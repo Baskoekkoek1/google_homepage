@@ -1,5 +1,6 @@
 <html>
 <head>
+</head>
 <style>
 
 #logo {
@@ -43,7 +44,8 @@ a {
 #square-img {
     max-width: 50%;
     max-height: 50%;
-    padding: 0px;
+    position: relative;
+    top: -7px;
 }
 #letter-b {
     background-color: darkslategray;
@@ -56,31 +58,79 @@ a {
     color:white;
     font-size: 24px;
 }  
+
+#b {
+    position: relative;
+    left: -20px;
+}
+
+#mag-glass {
+    position: relative;
+    left: -270px;
+    top: 40px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    background-color: lightgray;
+    width: 100%;
+    height: 36px;
+    float: left;
+}
+
+#zoeken {
+    position: relative;
+    left: -10px;
+    
+}
+
+#gok {
+    position: relative;
+    left: 10px;
+}
+
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    height: 36px;
+    width: 128.15px;
+    background-color: lightgray;
+
+}
 </style>
 <body>
+    <div id=nav-bar>
     <ul>        
-        <li><a id=b href="#">B</a></li> 
-        <li><a href="#"><img id=square-img src="square-icon.png" alt=""></a>
+        <li><a href="#"></a></li> 
+        <li><a href="#"><img id=square-img src="square-icon.png" alt=""></a></li>
         <li><a href="#">Afbeeldingen</a></li>
         <li><a href="#">Gmail</a></li>       
     </ul>
-<div id=letter-b> B
+</div>
+<div id=letter-b>
 </div>
 <div id="logo">
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
 </div>
 <div id="search-bar">
+    <div id=mag-glass><img src="mag-icon.png" alt=""> </div>
     <form>
         <input type="text" id="search" name="search">
     </form>
+    <button id="zoeken" type="button">Zoeken</button>
+    <button id="gok" type="button">Ik doe een gok</button>
+</div>
+<div id=footer>
+    <ul>
+     <li> <a href="#">Hoe Google zoeken werkt</a></li>
+     <li><a href="#">Bedrijf</a></li>
+     <li><a href="#">Over</a></li>
+     <li><a href="#">Adverteren</a></li>
+    </ul>
 </div>
 
 
 </body>
-
-
-
-</head>
-
-
 </html>
